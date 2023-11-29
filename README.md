@@ -1,2 +1,6 @@
-# CNY-SpeedExam-Crawler
-A Chrome Extensions to crawler Questions, Answers from CNY SpeedExam website
+# SpeedExamReset
+
+A Chrome Extensions to reset answers on SpeedExam website
+
+# Disclaimer: 
+We do not tracking or collecting any user data 
