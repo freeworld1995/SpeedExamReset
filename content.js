@@ -1,22 +1,11 @@
-var timer;
+chrome.runtime.onMessage.addListener(gotMessage);
 
-window.addEventListener("load", (event) => {
-  console.log("page is fully loaded");
-  timer = setInterval(displayHello, 9000);
-});
+function gotMessage(message, sender, sendResponse) {
+  sendResponse("Ok ban oi");
 
-function displayHello() {
-  console.log("timer running");
-
-  let progress = document.getElementById("count");
-
-  if (progress != null) {
-    if (progress.innerHTML == "100%") {
-      clearInterval(timer);
-
-      removeRightWrongAnswer();
-    }
-  }
+  console.log(`Run right wrong answer`);
+  
+  removeRightWrongAnswer();
 }
 
 function removeRightWrongAnswer() {
